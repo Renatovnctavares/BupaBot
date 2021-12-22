@@ -58,6 +58,7 @@ async function checkLocation(locationName, locationCode, postCode, state){
 
     if(date){
       if(date.match(`${month}`) && time) {
+
         console.log(`⚠️  ${locationName}: ${date} at ${time}`);
       } else {
         console.log(`${locationName}: ${date}`);
@@ -92,11 +93,11 @@ checkLocation('Newcastle', '#rbLocation148', '2000', 'NSW');
 checkLocation('Baulkham Hills', '#rbLocation130', '2000', 'NSW');
 
 // Robina
-checkLocation('Robina', '#rbLocation142', '2485', 'NSW');
+// checkLocation('Robina', '#rbLocation142', '2485', 'NSW');
 
-// Brisbane
-checkLocation('Brisbane', '#rbLocation61', '2485', 'NSW');
+// // Brisbane
+// checkLocation('Brisbane', '#rbLocation61', '2485', 'NSW');
 
-// Toowoomba
-checkLocation('Toowoomba', '#rbLocation155', '2485', 'NSW');
+// // Toowoomba
+// checkLocation('Toowoomba', '#rbLocation155', '2485', 'NSW');
 
