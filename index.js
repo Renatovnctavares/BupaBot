@@ -92,6 +92,12 @@ checkLocation('Newcastle', '#rbLocation148', '2000', 'NSW');
 // Baulkham Hills
 checkLocation('Baulkham Hills', '#rbLocation130', '2000', 'NSW');
 
+// Bankstown
+checkLocation('Bankstown', '#rbLocation170', '2000', 'NSW');
+
+// Corrimal
+checkLocation('Corrimal', '#rbLocation131', '2000', 'NSW');
+
 // Robina
 // checkLocation('Robina', '#rbLocation142', '2485', 'NSW');
 
