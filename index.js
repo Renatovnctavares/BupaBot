@@ -7,7 +7,7 @@ const baseUrl = 'https://bmvs.onlineappointmentscheduling.net.au/oasis/Default.a
 //   state: 'NSW'
 // };
 
-const month = '12';
+const month = '01';
 
 async function checkLocation(locationName, locationCode, postCode, state){
   try {
