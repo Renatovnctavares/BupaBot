@@ -33,3 +33,10 @@ jobs:
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
             ${{ steps.run_script_check.outputs.content }}
+      - name: send custom message
+        uses: appleboy/telegram-action@master
+        with:
+          to: 1168183486 # thais id
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: |
+            ${{ steps.run_script_check.outputs.content }}
