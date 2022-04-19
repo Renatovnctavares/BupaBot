@@ -26,13 +26,13 @@ jobs:
           LOCATIONS="${LOCATIONS//$'\n'/'%0A'}"
           LOCATIONS="${LOCATIONS//$'\r'/'%0D'}"
           echo "::set-output name=content::$LOCATIONS"
-      - name: send custom message
-        uses: appleboy/telegram-action@master
-        with:
-          to: ${{ secrets.TELEGRAM_TO }}
-          token: ${{ secrets.TELEGRAM_TOKEN }}
-          message: |
-            ${{ steps.run_script_check.outputs.content }}
+      # - name: send custom message
+      #   uses: appleboy/telegram-action@master
+      #   with:
+      #     to: ${{ secrets.TELEGRAM_TO }}
+      #     token: ${{ secrets.TELEGRAM_TOKEN }}
+      #     message: |
+      #       ${{ steps.run_script_check.outputs.content }}
       - name: send custom message
         uses: appleboy/telegram-action@master
         with:
